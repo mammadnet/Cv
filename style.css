@@ -154,7 +154,7 @@ body {
 }
 ul.timeline-list {
 	position: relative;
-	margin: 0;
+	/* margin: 0; */
 	padding: 0
 }
 ul.timeline-list:before {
@@ -247,4 +247,36 @@ ul.timeline-list li:after {
 	font-size: 18px;
 	font-weight: 500;
 	color: #072035;
+}
+
+
+@media only screen and (max-width: 766px){
+
+  .timeline_content {
+    z-index: 3;
+    margin-bottom: 25px;
+  }
+
+  ul.timeline-list:before {
+    left: 3%;
+  }
+
+  ul.timeline-list li:before {
+    left: 2%;
+  }
+  
+  ul.timeline-list li:after {
+    left: 3% !important;
+  }
+
+  ul.timeline-list li .timeline_content {
+    width: 90%;
+    padding: 10px;
+    float: left !important;
+    text-align: left !important;
+    border-right: 0px;
+    border-left: 2px solid #57636F;
+    border-radius: 2px 15px 15px 2px;
+    margin-left: 8% !important;
+  }
 }
